@@ -1,0 +1,14 @@
+# Keeps the Wonderful Vacations CRM (Render free plan) awake so DMC mails, follow-ups and reminders run on time.
+# Runs every 10 minutes; GitHub may delay scheduled runs a little. Free on public repositories.
+name: Keep CRM awake
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Ping CRM health check
+        run: curl -fsS --retry 3 --retry-delay 20 --max-time 90 https://wv-office.onrender.com/healthz
