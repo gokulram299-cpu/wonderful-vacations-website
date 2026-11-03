@@ -3,8 +3,8 @@ window.WV_CONFIG = {
   // CRM API (office app on its own sub-domain). Enquiries from this site become leads there.
   apiBase: 'https://wv-office.onrender.com',
   // Business contact (also fetched live from the CRM Settings when reachable)
-  whatsapp: '919894841188',          // digits only, with country code
-  phone: '+91 98948 41188',
+  whatsapp: '919789941188',          // digits only, with country code
+  phone: '+91 97899 41188',
   email: 'sales@wonderfulvacations.in',
   address: 'Coimbatore, Tamil Nadu',
   registeredAddress: '2/319, Dharapuram Main Road, North Avanashipalayam, Tiruppur, Tamil Nadu 638660',
